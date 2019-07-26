@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import EpisodeCard from "./EpisodeCard";
 import axios from "axios";
 
-export default function EpisodesList(props) {
+export default function EpisodesList() {
   const [episodes, setLocations] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export default function EpisodesList(props) {
   return (
     <section className="episode-list grid-view">
       {episodes.map(episode => (
-        <EpisodeCard data={episode} />
+        <EpisodeCard key={episode.id} data={episode} />
       ))}
     </section>
   );

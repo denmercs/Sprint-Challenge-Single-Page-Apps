@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import LocationCard from "./LocationCard";
 import axios from "axios";
 
-export default function LocationsList(props) {
+export default function LocationsList() {
   const [locations, setLocations] = useState([]);
 
   useEffect(() => {
@@ -17,9 +17,9 @@ export default function LocationsList(props) {
   }, []);
 
   return (
-    <section className="character-list grid-view">
+    <section className="location-list grid-view">
       {locations.map(location => (
-        <LocationCard data={location} />
+        <LocationCard key={location.id} data={location} />
       ))}
     </section>
   );

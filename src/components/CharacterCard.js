@@ -9,7 +9,6 @@ import {
 } from "reactstrap";
 
 export default function CharacterCard(props) {
-  console.log("DATA", props.data);
   return (
     <Fragment>
       <Card>
