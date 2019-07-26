@@ -1,7 +1,14 @@
-import React from 'react'
+import React from "react";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle
+} from "reactstrap";
 
-export default function LocationCard ({ name, type, dimension, residents }) {
-  // image={image}
-  return (<span>todo: location</span>
-  )
+export default function LocationCard(props) {
+  console.log("Location Props", props);
+  return <span>todo: location</span>;
 }
