@@ -1,14 +1,17 @@
-import React from "react";
-import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle
-} from "reactstrap";
+import React, { Fragment } from "react";
+import { Card, CardText, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 
 export default function LocationCard(props) {
   console.log("Location Props", props);
-  return <span>todo: location</span>;
+  return (
+    <Fragment>
+      <Card>
+        <CardBody>
+          <CardTitle>Name: {props.data.name}</CardTitle>
+          <CardSubtitle>Type: {props.data.type}</CardSubtitle>
+          <CardText>Dimension: {props.data.dimension}</CardText>
+        </CardBody>
+      </Card>
+    </Fragment>
+  );
 }
