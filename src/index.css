@@ -36,5 +36,20 @@ main {
 
 header h1 {
   text-align: center;
+}
 
+.card {
+  width: 50%;
+}
+
+.episode-card,
+.location-card {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: aliceblue;
+}
+
+.episode-list,
+.location-list {
+  width: 100%;
 }
